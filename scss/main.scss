@@ -1,0 +1,97 @@
+// Color Variables
+$primary-color: #1f3f5b;
+$secondary-color: #f4f7fc;
+$text-color: #333;
+$header-bg: #1f3f5b;
+
+// Base Styling
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: $secondary-color;
+	color: $text-color;
+}
+
+// Header
+.header {
+	background-color: $header-bg;
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	h1 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+}
+
+// Section Styles
+.section {
+	padding: 2rem;
+	max-width: 800px;
+	margin: 2rem auto;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	h2 {
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		color: $primary-color;
+	}
+	p,
+	pre {
+		font-size: 1rem;
+		line-height: 1.6;
+	}
+}
+
+// Code Blocks
+pre {
+	background-color: $secondary-color;
+	padding: 1rem;
+	border-radius: 5px;
+	overflow-x: auto;
+}
+
+// Button Styling
+button {
+	background-color: $primary-color;
+	color: white;
+	padding: 0.6rem 1.2rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 1rem;
+	&:hover {
+		background-color: darken($primary-color, 10%);
+	}
+}
+
+// Footer
+.footer {
+	background-color: $primary-color;
+	color: white;
+	padding: 1rem;
+	text-align: center;
+	font-size: 0.9rem;
+	a {
+		color: inherit;
+		margin-top: 20px;
+	}
+}
+
+// Media Query for Mobile
+@media (max-width: 768px) {
+	.header h1 {
+		font-size: 2rem;
+	}
+	.section {
+		padding: 1.5rem;
+	}
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Functions Tutorial</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>JavaScript Functions</h1>
+		<p>Learn everything you need to know about JavaScript functions and Date methods.</p>
+	</header>
+
+	<section class="section" id="intro">
+		<h2>What is a Function?</h2>
+		<p>A JavaScript function is a block of code designed to perform a particular task. Functions are reusable and allow
+			you to structure your code in a modular way.</p>
+		<pre><code>// Basic function syntax
+function greet() {
+  console.log("Hello, World!");
+}</code></pre>
+	</section>
+
+	<section class="section" id="types">
+		<h2>Types of JavaScript Functions</h2>
+		<div class="function-type">
+			<h3>1. Named Function</h3>
+			<p>Named functions are declared with a specific name and can be called by that name anywhere in your code.</p>
+			<pre><code>function sayHello() {
+  console.log("Hello!");
+}</code></pre>
+		</div>
+		<div class="function-type">
+			<h3>2. Anonymous Function</h3>
+			<p>Anonymous functions do not have a name and are often used as arguments or assigned to variables.</p>
+			<pre><code>const greet = function() {
+  console.log("Hello!");
+};</code></pre>
+		</div>
+		<div class="function-type">
+			<h3>3. Arrow Function</h3>
+			<p>Arrow functions provide a shorter syntax and don't bind their own `this` context.</p>
+			<pre><code>const greet = () => {
+  console.log("Hello!");
+};</code></pre>
+		</div>
+	</section>
+
+	<section class="section" id="date-methods">
+		<h2>Working with Date Methods</h2>
+		<p>The Date object in JavaScript provides methods to work with dates and times. Here are some common Date methods:
+		</p>
+		<pre><code>// Current date and time
+const now = new Date();
+console.log(now);
+
+// Get year, month, day
+console.log(now.getFullYear());
+console.log(now.getMonth());
+console.log(now.getDate());</code></pre>
+	</section>
+
+	<section class="section" id="examples">
+		<h2>Real-World Examples</h2>
+		<p>Here's an example using a function with Date methods to display the current time:</p>
+		<pre><code>function displayTime() {
+  const now = new Date();
+  return now.toLocaleTimeString();
+}</code></pre>
+		<button onclick="showTime()">Show Current Time</button>
+		<p id="timeDisplay"></p>
+	</section>
+
+	<footer class="footer">
+		<p>JavaScript Functions & Date Tutorial © 2024</p>
+		<a href="https://github.com/javasharipov"><span>@javasharipov</span></a>
+	</footer>
+
+	<script src="./app.js"></script>
+</body>
+
+</html>
